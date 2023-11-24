@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #262626;
+    color: #fff;
+}
+
+.posts {
+    padding: 36px 6%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 66px 3%;
+}
+
+.post {
+    width: 460px;
+    min-width: 300px;
+}
+
+.post .post-head {
+    margin-bottom: 18px;
+    font-size: 28px;
+}
+
+.post .post-body {
+    text-align: justify;
+}
+
+.post .post-body .post-description {
+    font-size: 18px;
+}
+
+
+/*Create Blog*/
+
+.create-blog-section {
+    padding: 36px 4%;
+}
+
+.blog-form {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.blog-form label {
+    margin: 26px 0 12px;
+    font-size: 18px;
+}
+
+.blog-form input,
+.blog-form textarea {
+    padding: 8px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 16px;
+    outline: 0;
+}
+
+.blog-form textarea {
+    resize: vertical;
+    min-height: 180px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 16px;
+    width: 360px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.2s;
+  }
+  
+  button:hover {
+    background-color: #333;
+  }
+
+button:hover {
+    background-color: #333;
+}
+
+
+/*individual post*/
+
+.individual-post{
+    padding: 36px 4%;
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+    width: 100%;
+}
+
+.individual-post .post-body{
+    max-width: 700px;
+    width: 50%;
+}
+
+.read-more-btn a{
+    text-decoration: none;
+    color: blue;
+}
+
+.read-more-btn{
+    margin-top: 16px;
+}
