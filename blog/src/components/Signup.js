@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import '../styles/login.css'
-
+import axios from 'axios'
 
 function Signup(){
 
@@ -19,7 +19,17 @@ function Signup(){
 
     function handleSubmit(e){
         e.preventDefault()
-        console.log(formData)
+        console.log("form data",formData)
+        axios
+        .post('http://localhost:3000/signup',formData)
+        .then(()=>{
+            console.log('form data sent response received')
+        })
+        .catch((e)=>{
+            console.log(e)
+        })
+
+        
     }
     return(
         <div className="auth-form">
